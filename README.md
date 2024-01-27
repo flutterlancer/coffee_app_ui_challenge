@@ -1,1 +1,1 @@
-# coffee_app_ui_challenge
+# Coffee App UI Challenge
