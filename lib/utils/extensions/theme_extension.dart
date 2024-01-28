@@ -11,8 +11,12 @@ extension CustomTheme on ThemeData {
 
   Color get whiteColor => Colors.white;
 
-  LinearGradient get homeTopBarGradient => const LinearGradient(
-        colors: [Color(0xff131313), Color(0xff313131)],
+  Color get homeSearchTextFieldColor => const Color(0xff313131);
+
+  Color get unselectedCategoryColor => const Color(0xff2F4B4E);
+
+  LinearGradient get homeTopBarGradient => LinearGradient(
+        colors: [const Color(0xff131313), homeSearchTextFieldColor],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
       );

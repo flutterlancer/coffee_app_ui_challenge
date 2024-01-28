@@ -1,10 +1,13 @@
-import 'package:coffee_app_ui/features/onboarding/widgets/primary_button.dart';
+import 'package:coffee_app_ui/core/routes.dart';
 import 'package:coffee_app_ui/utils/assets/assets.dart';
 import 'package:coffee_app_ui/utils/extensions/text_theme_extension.dart';
 import 'package:coffee_app_ui/utils/extensions/theme_extension.dart';
 import 'package:coffee_app_ui/utils/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+
+import '../widgets/primary_button.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -38,7 +41,7 @@ class OnboardingPage extends StatelessWidget {
                 Center(
                   child: Text(
                     "Coffee so good,\nyour taste buds\nwill love it.",
-                    style: context.theme.textTheme.largeHeading(context),
+                    style: context.theme.textTheme.onboardingHeading(context),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -46,12 +49,15 @@ class OnboardingPage extends StatelessWidget {
                 Center(
                   child: Text(
                     "The best grain, the finest roast, the\npowerful flavor.",
-                    style: context.theme.textTheme.mediumHeading(context),
+                    style: context.theme.textTheme.onboardingSubtitle(context),
                     textAlign: TextAlign.center,
                   ),
                 ),
                 SizedBox(height: 24.h),
-                const PrimaryAppButtonWidget(title: "Get Started"),
+                PrimaryAppButtonWidget(
+                  title: "Get Started",
+                  onTap: () => context.push(AppRoutes.home),
+                ),
                 SizedBox(height: 8.h),
               ],
             ),
