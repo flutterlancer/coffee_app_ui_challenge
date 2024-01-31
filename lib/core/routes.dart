@@ -5,4 +5,5 @@ class AppRoutes {
   static final productDetailsName = productDetails.replaceFirst("/", "");
 
   static const String order = "order";
+  static const String trackOrder = "/track_order";
 }

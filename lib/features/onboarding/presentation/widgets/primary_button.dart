@@ -20,15 +20,15 @@ class PrimaryAppButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: width ?? 1.sw,
-        height: 62.h,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16.r),
-          color: bgColor ?? context.theme.primaryColor,
-        ),
+    return Container(
+      width: width ?? 1.sw,
+      height: 62.h,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16.r),
+        color: bgColor ?? context.theme.primaryColor,
+      ),
+      child: TextButton(
+        onPressed: onTap,
         child: Center(
           child: Text(
             title,

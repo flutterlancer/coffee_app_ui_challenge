@@ -41,7 +41,10 @@ class BottomControlsWidget extends StatelessWidget {
         PrimaryAppButtonWidget(
           title: "Buy Now",
           onTap: () {
-            context.push("${AppRoutes.productDetails}/${AppRoutes.order}");
+            context.push(
+              "${AppRoutes.productDetails}/${AppRoutes.order}",
+              extra: product,
+            );
           },
           width: 217.w,
         )

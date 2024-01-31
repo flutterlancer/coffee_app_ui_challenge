@@ -6,6 +6,8 @@ class Assets {
   final String _orderPageAssets = "assets/images/product";
   final String _globalAssets = "assets/images/global";
 
+  String mapStyle = "assets/map_style.json";
+
   // onboarding
   String get onboardingBg => "$_onboardingAssets/onboarding.png";
 
@@ -28,6 +30,13 @@ class Assets {
   // global
   String get backIcon => "$_globalAssets/back_icon.svg";
   String get wishlistIcon => "$_globalAssets/wishlist_icon.svg";
+  String get discountIcon => "$_globalAssets/discount_icon.svg";
+  String get cashIcon => "$_globalAssets/cash_icon.svg";
+  String get moreIcon => "$_globalAssets/more_icon.svg";
+  String get recentreIcon => "$_globalAssets/recentre_icon.svg";
+  String get callIcon => "$_globalAssets/call_icon.svg";
+  // String get deliveryBikeIcon => "$_globalAssets/delivery_bike.png";
+  String get deliveryBoy => "$_globalAssets/delivery_boy.png";
   String get coffeeBean => "$_globalAssets/coffee_bean.png";
   String get milk => "$_globalAssets/milk.png";
 }

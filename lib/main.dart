@@ -12,11 +12,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375.0, 812.0),
-      child: MaterialApp.router(
-        title: 'Coffee App UI',
-        theme: CoffeeAppTheme.lightTheme,
-        routerConfig: AppRouter.router,
-        debugShowCheckedModeBanner: false,
+      child: NotificationListener<OverscrollIndicatorNotification>(
+        onNotification: (n) {
+          n.disallowIndicator();
+          return true;
+        },
+        child: MaterialApp.router(
+          title: 'Coffee App UI',
+          theme: CoffeeAppTheme.lightTheme,
+          routerConfig: AppRouter.router,
+          debugShowCheckedModeBanner: false,
+        ),
       ),
     );
   }

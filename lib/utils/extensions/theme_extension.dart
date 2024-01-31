@@ -42,4 +42,10 @@ extension CustomTheme on ThemeData {
   Color get homePromoBarColor => const Color(0xffED5151);
 
   Color get onboardingSecondaryTextColor => const Color(0xffa9a9a9);
+
+  Color get discountListileBorderColor => const Color(0xffEAEAEA);
+  Color get transparentColor => Colors.transparent;
+  Color get orderPageActiveBarColor => const Color(0xff36C07E);
+  Color get orderPageDiabledBarColor => const Color(0xffDFDFDF);
+  Color get trackingPageShadowColor => const Color(0xffE4E4E4).withOpacity(.25);
 }

@@ -39,6 +39,9 @@ dependencies:
   go_router: ^13.0.1
   flutter_svg: ^2.0.9
   rich_readmore: ^1.1.1
+  count_stepper: ^0.0.4
+  flutter_animate: ^4.4.1
+  google_maps_flutter: ^2.5.3
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +71,7 @@ flutter:
     - assets/images/onboarding/
     - assets/images/product/
     - assets/images/global/
+    - assets/map_style.json
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

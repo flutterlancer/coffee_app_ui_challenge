@@ -7,6 +7,7 @@ class CoffeeAppTheme {
         fontFamily: fontFamily,
         useMaterial3: true,
         textButtonTheme: textButtonTheme(),
+        appBarTheme: const AppBarTheme(surfaceTintColor: Colors.transparent),
         primaryColor: const Color(0xffC67C4E),
       );
 
